@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(155, 152, 152);
+}
+
+
+/* Header and Navigation */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    background: #3f3e3e;
+    position: fixed;
+    width: 100%;
+}
+
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 100;
+    position: relative;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.header-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    color: #fff;
+}
+
+#hero img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1.4rem 0;
+}
+
+#hero h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+hr {
+    width: 150px;
+    margin: 0.5rem auto;
+}
+
+/* About Me Section */
+.title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+#about {
+    padding: 5rem 3rem;
+}
+
+.about {
+    display: flex;
+    padding: 3rem 5rem;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.about p {
+    font-size: 1.3rem;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+}
+
+.about img {
+    width: 400px;
+    height: 323px;
+    margin-left: 2rem;
+}
+
+.column {
+    flex-direction: row-reverse;
+    padding: 3rem 6rem;
+}
+
+.middle img {
+    margin-top: 2rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 5rem 3rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill {
+    width: 300px;
+    height: 200px;
+    background: #3f3e3e;
+    margin: 1.4rem 0rem 1.4rem 2rem;
+    border-radius: 20px;
+    padding: 2.3rem 1.4rem;
+    color: #fff;
+}
+
+.skill h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.skill p {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+
+}
+
+/* Projects */
+#projects {
+    padding: 5rem 3rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 450px;
+    width: 800px;
+    background: #838080;
+    color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 280px;
+    height: 300px;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.p-text {
+    text-align: center;
+    padding: 1rem;
+}
+
+#contact {
+    padding: 5rem 3rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 100px;
+    padding: 3rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info img {
+    width: 450px;
+    height: 350px;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #838080;
+    text-align: center;
+    width: 350px;
+    color: #fff;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.contact-info form input {
+    width: 200px;
+    height: 40px;
+    border-radius: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #838080;
+}
+
+
+.contact-info form textarea {
+    width: 200px;
+    height: 150px;
+    border-radius: 16px;
+    resize: none;
+    text-align: center;
+    color: #838080;
+    padding: 20px;
+    outline: none;
+}
+
+.contact-info form button {
+    width: 100px;
+    height: 40px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    color: #838080;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7rem;
+    background: #3f3e3e;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    padding: 1rem;
+    align-items: center;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.links img {
+    width: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 925px) {
+    header nav {
+        padding: 1rem;
+    }
+
+    .about img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    #projects {
+        padding: 1rem 0.5rem;
+    }
+
+    .projects {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-info {
+        gap: 20px;
+    }
+
+    footer {
+        padding: 0 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .links {
+        gap: 5px;
+    }
+
+    #links {
+        padding: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 1.4rem 2rem;
+        position: relative;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1.4rem;
+        margin-top: 10px;
+    }
+
+    #hero {
+        padding: 2rem;
+    }
+
+    .title {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    #about {
+        padding: 1rem 0;
+    }
+
+    .about img {
+        margin: 1rem 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+
+    .skill {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .skill h2 {
+        font-size: 1.2rem;
+    }
+
+    .project {
+        justify-content: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .contact-info form {
+        height: 357px;
+        width: 240px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .project {
+        width: 400px;
+    }
+
+    #links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .links a {
+        width: 70px;
+    }
+}
